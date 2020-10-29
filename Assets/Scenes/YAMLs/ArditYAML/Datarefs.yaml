@@ -1,0 +1,82 @@
+---
+Address: "tcp://127.0.0.1:1883"
+
+Publish Topic:
+  - "XP-S76-Debug"
+
+XP-S76-Debug:
+  - "windspeed":
+      dataref: "sim/cockpit2/gauges/indicators/wind_speed_kts"
+      type: "float"  
+
+  - "windheading":
+      dataref: "sim/graphics/animation/windsock_psi"
+      type: "float"  
+
+  - "windpitch":
+      dataref: "sim/graphics/animation/windsock_the"
+      type: "float"  
+
+  - "windroll":
+      dataref: "sim/graphics/animation/windsock_phi"
+      type: "float"  
+
+  - "PROPRPM":
+      dataref: "sim/cockpit2/engine/indicators/prop_speed_rpm"
+      type: "float"
+      start: 0
+      num_value: 7
+      
+  - "ENGNTRQ":
+      dataref: "sim/cockpit2/engine/indicators/torque_n_mtr"
+      type: "float"
+      start: 0
+      num_value: 2
+
+  - "ENGN1":
+      dataref: "sim/flightmodel/engine/ENGN_N1_"
+      type: "float"
+      start: 0
+      num_value: 2
+
+  - "radioaltitude":
+      dataref: "sim/cockpit2/gauges/indicators/radio_altimeter_height_ft_pilot"
+      type: "float"
+
+  - "groundspeed":
+      dataref: "sim/flightmodel/position/groundspeed"
+      type: "float"
+
+  - "relativepitch":
+      dataref: "sim/flightmodel/position/alpha"
+      type: "float"
+
+  - "relativeheading":
+      dataref: "sim/flightmodel/position/beta"
+      type: "float"
+      
+  - "airspeed":
+      dataref: "sim/flightmodel/position/indicated_airspeed"
+      type: "float"
+
+  - "altitude":
+      dataref: "sim/cockpit2/gauges/indicators/altitude_ft_pilot"
+      type: "float"
+
+  - "verticalspeed":
+      dataref: "sim/cockpit2/gauges/indicators/vvi_fpm_pilot"
+      type: "float"
+
+  - "heading":
+      dataref: "sim/cockpit2/gauges/indicators/heading_AHARS_deg_mag_pilot"
+      type: "float"
+
+  - "pitch":
+      dataref: "sim/cockpit2/gauges/indicators/pitch_AHARS_deg_pilot"
+      type: "float"
+
+  - "roll":
+      dataref: "sim/cockpit2/gauges/indicators/roll_AHARS_deg_pilot"
+      type: "float"
+
+...
